@@ -1,0 +1,161 @@
+:root {
+  --blue-dark: #1e3a8a;
+  --blue-mid: #2563eb;
+  --blue-light: #dbeafe;
+  --gray-bg: #f8fafc;
+  --gray-text: #334155;
+  --cta-hover: #1d4ed8;
+  --tile-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--gray-bg);
+  color: var(--gray-text);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  color: var(--blue-dark);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--blue-mid);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cta-hover);
+}
+
+code {
+  font-family: monospace;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero {
+  background: var(--blue-dark);
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.hero img.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--blue-mid);
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--cta-hover);
+  transform: scale(1.05);
+}
+
+.cta-btn.big {
+  font-size: 1.15rem;
+  padding: 1rem 2rem;
+}
+
+.intro {
+  padding: 2rem 1.5rem;
+  max-width: 750px;
+  margin: auto;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tile {
+  background: var(--tile-bg);
+  border-left: 4px solid var(--blue-mid);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.compare {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.compare table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.compare th, .compare td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.compare th {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+.cta-strip {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 2rem 1rem;
+  background: #e2e8f0;
+  color: #475569;
+}

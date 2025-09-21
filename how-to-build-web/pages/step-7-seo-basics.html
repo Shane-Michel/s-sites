@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Step 7: Add Basic SEO | How to Build a Website</title>
+  <meta name="description" content="Step 7 of building a website: learn how to add meta tags, schema, alt text, and basic SEO structure that helps your site rank.">
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <link rel="canonical" href="https://how-to-build-web.s-sites.com/step-7-seo-basics.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="../logo.png" alt="s-sites.com logo" class="logo" />
+    <h1>Step 7: Add Basic SEO</h1>
+    <p>SEO is how people find you. It’s also where most DIYers lose steam. Here’s how to do it right, from the start.</p>
+  </header>
+
+  <section class="intro">
+    <h2>What SEO Means Here</h2>
+    <p>This isn't keyword stuffing or buying backlinks. This is the basics: setting your pages up to be understood, crawled, and ranked.</p>
+  </section>
+
+  <section class="tiles">
+    <div class="tile">
+      <h3>🧾 Meta Tags</h3>
+      <p>Add this to the <code>&lt;head&gt;</code> of every HTML file:</p>
+      <pre><code>&lt;title&gt;Your Page Title&lt;/title&gt;
+&lt;meta name="description" content="Short description under 160 characters"&gt;
+&lt;link rel="canonical" href="https://yourdomain.com/page" /&gt;</code></pre>
+    </div>
+
+    <div class="tile">
+      <h3>📸 Alt Text & Image Names</h3>
+      <ul>
+        <li>Every image should include an <code>alt</code> tag</li>
+        <li>File names matter: <code>team-photo.jpg</code> > <code>IMG_9035.jpg</code></li>
+        <li>Example: <code>&lt;img src="..." alt="Owner standing by septic truck" /&gt;</code></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <h3>📐 Structured Data (Schema)</h3>
+      <p>Use JSON-LD format for Local Business, FAQ, Article, etc.</p>
+      <ul>
+        <li>Generate snippets using <a href="https://technicalseo.com/tools/schema-markup-generator/" target="_blank">Technical SEO Schema Generator</a></li>
+        <li>Paste into your <code>&lt;head&gt;</code></li>
+        <li>Test with <a href="https://search.google.com/test/rich-results" target="_blank">Rich Results Test</a></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <h3>🧭 Sitemap & robots.txt</h3>
+      <ul>
+        <li>Create a <code>sitemap.xml</code> listing all public URLs</li>
+        <li>robots.txt should include:</li>
+        <pre><code>User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml</code></pre>
+        <li>Submit sitemap to Google & Bing (coming in Step 8)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Quick SEO Tips</h2>
+    <ul>
+      <li>One <code>&lt;h1&gt;</code> per page. Make it relevant.</li>
+      <li>Use <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> for structure</li>
+      <li>Don't use duplicate titles or descriptions across pages</li>
+      <li>Optimize for humans first, Google second</li>
+    </ul>
+    <p><em>Estimated Time:</em> 2–4 hours for a small site</p>
+  </section>
+
+  <section class="cta-strip">
+    <h3>SEO Feels Like a Moving Target</h3>
+    <p>You can get the basics in place. But keeping up with updates, schema, performance, and SEO best practices? That’s a full-time job.</p>
+    <p><strong>What if you had a friend in the business — your inside guy — who made SEO part of the $50/month deal?</strong></p>
+    <a href="https://developer.shanemichel.net/services/hands-free" class="cta-btn big">Make My Site SEO-Ready</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Shane Michel | s-sites.com</p>
+    <p><a href="https://how-to-build-web.s-sites.com">← Back to Full Guide</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Allow: /
+
+Sitemap: https://how-to-build-web.s-sites.com/sitemap.xml

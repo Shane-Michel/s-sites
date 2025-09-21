@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Step 6: Connect Domain + Hosting | How to Build a Website</title>
+  <meta name="description" content="Step 6 of building a website: connect your domain to your hosting with DNS, nameservers, SSL, and propagation explained.">
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <link rel="canonical" href="https://how-to-build-web.s-sites.com/step-6-connect-domain.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="../logo.png" alt="s-sites.com logo" class="logo" />
+    <h1>Step 6: Connect Domain + Hosting</h1>
+    <p>This is the part where you tell the world where your site lives. DNS, nameservers, and SSL — let’s go.</p>
+  </header>
+
+  <section class="intro">
+    <h2>What You're Doing Here</h2>
+    <p>You're pointing your domain (like <code>mycoolsite.com</code>) to your hosting provider (like Bluehost or Vercel) so the internet knows where your website files live.</p>
+  </section>
+
+  <section class="tiles">
+    <div class="tile">
+      <h3>🔁 Update Nameservers</h3>
+      <p>If you’re using a traditional host (like Bluehost, SiteGround, etc.):</p>
+      <ul>
+        <li>Login to your domain registrar (Namecheap, GoDaddy, etc.)</li>
+        <li>Find the DNS or Nameserver settings</li>
+        <li>Replace default nameservers with those from your host</li>
+        <li><strong>Example:</strong> <code>ns1.bluehost.com</code> and <code>ns2.bluehost.com</code></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <h3>📍 Add A Records (for advanced setups)</h3>
+      <p>If your host gave you an IP address (common for VPS or static hosts like Vercel):</p>
+      <ul>
+        <li>Go to domain DNS settings</li>
+        <li>Add an <code>A</code> record pointing to your server IP</li>
+        <li>Also add a <code>CNAME</code> for <code>www</code> pointing to <code>@</code></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <h3>🔐 Add SSL (HTTPS)</h3>
+      <p>Modern browsers flag non-HTTPS sites. Most hosting providers offer free SSL certificates.</p>
+      <ul>
+        <li>Enable HTTPS in your hosting dashboard</li>
+        <li>Use <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a> if hosting manually</li>
+        <li>Test your site at <a href="https://whynopadlock.com" target="_blank">WhyNoPadlock.com</a></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <h3>⏱ Wait for Propagation</h3>
+      <p>DNS changes can take 10 minutes — or up to 48 hours — to fully propagate.</p>
+      <ul>
+        <li>Use <a href="https://dnschecker.org" target="_blank">dnschecker.org</a> to monitor</li>
+        <li>Clear your browser cache when testing</li>
+        <li>Don’t panic — just give it time</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Estimated Time</h2>
+    <p>Most users can get their domain fully connected in 30–90 minutes, but full global propagation can take up to 48 hours.</p>
+  </section>
+
+  <section class="cta-strip">
+    <h3>This Is the Step Where Many People Quit</h3>
+    <p>Nameservers? A records? SSL? Error pages? It’s a mess. But it’s also where I shine.</p>
+    <p><strong>What if you had a friend in the business — your inside guy — who could connect everything, troubleshoot, and hand you a working site for just $50/month?</strong></p>
+    <a href="https://developer.shanemichel.net/services/hands-free" class="cta-btn big">Make It Live — Hands-Free</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Shane Michel | s-sites.com</p>
+    <p><a href="https://how-to-build-web.s-sites.com">← Back to Full Guide</a></p>
+  </footer>
+</body>
+</html>
