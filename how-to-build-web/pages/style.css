@@ -53,12 +53,6 @@ header.hero::after {
   z-index: -1;
 }
 
-header.hero img.logo {
-  width: 140px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
 header.hero h1 {
   margin: 0 0 0.75rem;
   font-size: clamp(2.1rem, 4vw, 3rem);
