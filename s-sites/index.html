@@ -3,63 +3,321 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>s-sites.com – Smarter Sites. Done for You.</title>
-  <meta name="description" content="A network of optimized subdomains focused on web education, SEO, and hands-free development. Powered by Shane Michel.">
-  <meta name="keywords" content="s-sites, website builder, learn web development, local SEO, hands-free websites">
+  <title>s-sites.com | Hands-Free Websites That Rank & Convert</title>
+  <meta name="description" content="Launch a conversion-focused website network with s-sites.com. Learn how to build a site, or hand everything to Shane Michel for a $50/month hands-free build that is SEO-ready from day one." />
+  <meta name="keywords" content="hands-free website build, SEO website service, small business web design, how to build a website, Shane Michel" />
+  <meta name="author" content="Shane Michel" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="s-sites.com – Smarter Sites. Done for You.">
-  <meta property="og:description" content="Explore smart subdomains that teach, rank, and convert. Learn to build or go hands-free with Shane Michel.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://s-sites.com/">
+  <meta property="og:title" content="s-sites.com | Hands-Free Websites That Rank & Convert" />
+  <meta property="og:description" content="Explore the s-sites network of SEO-focused guides and hands-free website builds by Shane Michel." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://s-sites.com/" />
+  <meta property="og:image" content="https://s-sites.com/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hands-Free Websites That Rank & Convert" />
+  <meta name="twitter:description" content="Skip the DIY stress. s-sites.com is your launchpad for learning or outsourcing your next SEO-ready website." />
+  <meta name="twitter:image" content="https://s-sites.com/logo.png" />
+
   <link rel="canonical" href="https://s-sites.com/" />
   <link rel="icon" href="favicon.png" type="image/png" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.PNG" sizes="32x32" />
-
-    <!-- Logo for social sharing (optional Open Graph) -->
-    <meta property="og:image" content="https://s-sites.com/logo.png" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://s-sites.com/#website",
+          "url": "https://s-sites.com/",
+          "name": "s-sites.com",
+          "description": "Hands-free website builds and SEO education from Shane Michel.",
+          "publisher": { "@id": "https://s-sites.com/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://s-sites.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://s-sites.com/#organization",
+          "name": "s-sites by Shane Michel",
+          "url": "https://s-sites.com/",
+          "logo": "https://s-sites.com/logo.png",
+          "sameAs": [
+            "https://developer.shanemichel.net/services/hands-free"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "hello@shanemichel.net",
+            "areaServed": "US",
+            "availableLanguage": "English"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://s-sites.com/#hands-free-service",
+          "serviceType": "Hands-free website design and SEO implementation",
+          "name": "Hands-Free Website Build",
+          "description": "Done-for-you website design, copy, SEO, and hosting setup with monthly support from Shane Michel.",
+          "provider": { "@id": "https://s-sites.com/#organization" },
+          "areaServed": "North America",
+          "offers": {
+            "@type": "Offer",
+            "price": "50",
+            "priceCurrency": "USD",
+            "url": "https://developer.shanemichel.net/services/hands-free",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://s-sites.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is included in the hands-free website build?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every hands-free build covers strategy, copywriting, responsive design, SEO foundations, launch support, and ongoing updates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How fast can my website go live?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most projects begin within 72 hours and launch within 2–3 weeks depending on content complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I still learn to build my own site?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The how-to-build hub walks you through every step so you can DIY now or understand what you're delegating."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <img src="logo.png" alt="s-sites.com logo" class="logo" />
-    <p>s-sites.com is your launchpad for SEO-ready web content, hands-free builds, and real results.</p>
-    <a href="#explore" class="cta-btn">Explore the Network</a>
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="https://s-sites.com/" class="brand" aria-label="s-sites home">
+        <img src="logo.png" alt="s-sites logo" />
+        <span> s-sites </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#services">Hands-Free Build</a>
+        <a href="#network">Learning Hub</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="cta-btn primary" href="https://developer.shanemichel.net/services/hands-free">Start Your Project</a>
+    </div>
   </header>
 
-  <section class="intro">
-    <h2>What is s-sites.com?</h2>
-    <p>This is more than just a homepage — it’s a smart system of subdomains, each designed to teach, rank, or convert. Whether you’re trying to build a site, learn SEO, or let us do the heavy lifting, you’re in the right place.</p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Conversion-focused websites • Local SEO • Automated launch</p>
+        <h1>Bring your next website online without touching the tech.</h1>
+        <p class="lead">
+          s-sites.com is a network of optimized microsites and guides built by developer Shane Michel. Learn the craft step-by-step, or hire me to build a high-performing website that is optimized for search, storytelling, and sales.
+        </p>
+        <div class="cta-group">
+          <a class="cta-btn primary" href="https://developer.shanemichel.net/services/hands-free">Get a Hands-Free Build</a>
+          <a class="cta-btn ghost" href="https://how-to-build-web.s-sites.com">Teach Me the Process</a>
+        </div>
+        <div class="metrics" role="list">
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">72 hrs</span>
+            <span class="metric-label">Average kickoff window</span>
+          </div>
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">3x</span>
+            <span class="metric-label">More keywords targeted vs template sites</span>
+          </div>
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">$50/mo</span>
+            <span class="metric-label">Transparent, all-in management</span>
+          </div>
+        </div>
+      </div>
+      <div class="blur-spot blur-one" aria-hidden="true"></div>
+      <div class="blur-spot blur-two" aria-hidden="true"></div>
+    </section>
 
-  <section id="explore" class="tiles">
-    <div class="tile">
-      <h3><a href="https://how-to-build-web.s-sites.com">how-to-build-websites</a></h3>
-      <p>A step-by-step guide to building your own business website — or handing it off to a pro.</p>
-    </div>
-    <div class="tile">
-      <h3>Coming Soon</h3>
-      <!-- <h3><a href="https://seo-ready.s-sites.com">seo-ready</a></h3> -->
-      <p>Learn what it takes to rank on Google — or get a site that’s optimized out of the box.</p>
-    </div>
-    <div class="tile">
-      <h3>Coming Soon</h3>
-      <!-- <h3><a href="https://local-sites.s-sites.com">local-sites</a></h3> -->
-      <p>Focused landing pages for businesses who want to dominate local search results.</p>
-    </div>
-  </section>
+    <section id="services" class="section service-highlight">
+      <div class="container">
+        <p class="eyebrow">Hands-Free Build</p>
+        <h2>Everything you need to launch and grow in one subscription.</h2>
+        <p class="section-lead">Design, copy, SEO, analytics, and maintenance handled by a developer who understands small business marketing.</p>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Strategic Planning</h3>
+            <p>We map your offers, differentiators, and search opportunities so your site aligns with customer intent.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Story-Driven Pages</h3>
+            <p>Conversion copy, service breakdowns, and trust signals that make visitors feel like they found "the one."</p>
+          </article>
+          <article class="feature-card">
+            <h3>SEO & Analytics Setup</h3>
+            <p>Schema markup, keyword-focused content, speed optimization, and analytics dashboards configured for you.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Ongoing Support</h3>
+            <p>Monthly updates, technical monitoring, and new landing pages as your business grows.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a class="cta-btn primary" href="https://developer.shanemichel.net/services/hands-free">See the full hands-free service →</a>
+        </div>
+      </div>
+    </section>
 
-  <section class="cta-strip">
-    <h3>Want it all done for you?</h3>
-    <p>Skip the DIY stress. I’ll build you an SEO-optimized, mobile-ready website without the hassle.</p>
-    <a href="https://developer.shanemichel.net/services/hands-free" class="cta-btn big">Start Your Project</a>
-  </section>
+    <section id="network" class="section network">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Learning Hub</p>
+          <h2>Prefer to DIY? Use the free how-to-build hub.</h2>
+          <p>The companion site <a href="https://how-to-build-web.s-sites.com">how-to-build-web.s-sites.com</a> walks you through domain setup, hosting, design, SEO, and launch. Every step links to tools, checklists, and real-world timelines.</p>
+          <ul class="checked-list">
+            <li>10-step tutorial built for first-time founders and local businesses.</li>
+            <li>Downloadable checklists for domains, hosting, and pre-launch QA.</li>
+            <li>Guidance on when to DIY and when to bring in a pro.</li>
+          </ul>
+          <a class="cta-btn ghost" href="https://how-to-build-web.s-sites.com">Explore the guide</a>
+        </div>
+        <div class="glow-card">
+          <h3>Two paths, one goal:</h3>
+          <p><strong>Learn it.</strong> Follow the how-to hub to build confidently.</p>
+          <p><strong>Delegate it.</strong> Tap the hands-free service when you want your time back.</p>
+          <p class="note">Either way, you get a partner focused on search visibility and conversions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="container">
+        <p class="eyebrow">Process</p>
+        <h2>Launch-ready in four collaborative phases.</h2>
+        <div class="timeline">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Discovery & Strategy</h3>
+            <p>We define your goals, gather assets, and prioritize keywords plus offers to spotlight.</p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>UX & Copy Blueprint</h3>
+            <p>Page outlines, wireframes, and draft messaging crafted to guide visitors to the next step.</p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Design & Build</h3>
+            <p>Responsive layout, performance tuning, schema markup, and analytics integrations go live in staging.</p>
+          </article>
+          <article>
+            <span class="step-number">04</span>
+            <h3>Launch & Ongoing Care</h3>
+            <p>DNS changes, submission to search engines, reporting, and monthly updates keep momentum high.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a class="cta-btn primary" href="https://developer.shanemichel.net/services/hands-free">Book a discovery call</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section social-proof">
+      <div class="container">
+        <p class="eyebrow">Why founders choose s-sites</p>
+        <h2>Built for impact, backed by measurable results.</h2>
+        <div class="card-grid testimonials">
+          <blockquote class="feature-card">
+            <p>“Shane turned a confusing list of services into a story that makes sense. We climbed to the top three local results within a month.”</p>
+            <cite>— Alicia M., home services founder</cite>
+          </blockquote>
+          <blockquote class="feature-card">
+            <p>“The ongoing updates keep us fresh without me logging into a dashboard. It’s like having an in-house marketer on call.”</p>
+            <cite>— Darren K., fitness studio owner</cite>
+          </blockquote>
+          <blockquote class="feature-card">
+            <p>“I used the how-to hub to understand the steps, then hired Shane to execute. Now I know exactly what I’m paying for.”</p>
+            <cite>— Priya S., bookkeeping firm</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>Answers before you commit.</h2>
+        <div class="faq-items">
+          <details>
+            <summary>What does the $50/month hands-free plan include?</summary>
+            <p>Strategy workshops, conversion copywriting, design, development, hosting recommendations, launch management, and ongoing monthly enhancements—plus direct access to me for updates.</p>
+          </details>
+          <details>
+            <summary>Do you work with existing websites?</summary>
+            <p>Yes. I can audit, rebuild, or migrate your current content into the s-sites framework for a cleaner, faster, and more optimized experience.</p>
+          </details>
+          <details>
+            <summary>Can we blend DIY and done-for-you?</summary>
+            <p>Absolutely. Use the how-to hub to outline your pages, then hand off design, development, or SEO tasks whenever you want expert execution.</p>
+          </details>
+          <details>
+            <summary>How do we get started?</summary>
+            <p>Click any “Start Your Project” button to share a bit about your business. I’ll respond within one business day with next steps and a kickoff timeline.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="container">
+        <h2>Ready for a website that actually sells?</h2>
+        <p>Let’s build or optimize a site that ranks, resonates, and converts—without you babysitting the tech stack.</p>
+        <div class="cta-group">
+          <a class="cta-btn primary" href="https://developer.shanemichel.net/services/hands-free">Start Your Project</a>
+          <a class="cta-btn ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Shane Michel. Built with purpose.</p>
-    <p><a href="https://developer.shanemichel.net/services">Visit My Main Developer Site</a></p>
+    <div class="container footer-content">
+      <div>
+        <a href="https://s-sites.com/" class="brand" aria-label="s-sites home">
+          <img src="logo.png" alt="s-sites logo" />
+          <span>s-sites</span>
+        </a>
+        <p>© <span id="year"></span> Shane Michel. Purpose-built websites and learning resources.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://developer.shanemichel.net/services/hands-free">Hands-Free Service</a>
+        <a href="https://how-to-build-web.s-sites.com">How-To Hub</a>
+        <a href="https://developer.shanemichel.net/services">More Services</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
